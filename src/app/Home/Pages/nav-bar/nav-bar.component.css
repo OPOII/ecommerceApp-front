@@ -1,0 +1,32 @@
+li{
+  list-style: none;
+  color: white;
+}
+
+.navBar{
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar .separate{
+  display: flex;
+  gap: 2rem;
+}
+
+.separate{
+  margin-top: 20px;
+}
+.separate button{
+  background-color: black;
+  color: green;
+  border-color: green;
+  border-radius: 5px;
+}
+.separate input{
+  border-radius: 2px;
+}

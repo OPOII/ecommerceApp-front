@@ -1,0 +1,19 @@
+<div >
+  <app-nav-bar></app-nav-bar>
+  <div class="container">
+    <div class="welcome">
+     <div>
+      <h2>Bienvenido a Spring Ecommerce 2024</h2>
+       <h4> Tu tienda de productos en Linea</h4>
+     </div>
+    </div>
+    <div class="gallery">
+      <div *ngFor="let product of products">
+        <card-component ></card-component>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
