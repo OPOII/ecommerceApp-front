@@ -6,6 +6,10 @@
 
 }
 
+.button-home:hover{
+  color: gray;
+}
+
 .lista{
   /* Display flex, es para que esten en la misma linea */
   display: flex;

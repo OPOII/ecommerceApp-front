@@ -13,7 +13,7 @@ export class ShowProductsComponent  {
 
 
   crearProducto(){
-    this.router.navigateByUrl('/products/add')
+    this.router.navigate(['/products/add']);
   }
 
   editarProducto(){
