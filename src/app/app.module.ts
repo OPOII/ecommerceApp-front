@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AuthModuleModule } from './auth/auth-module.module';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './Home/home.module';
+import { SharedModule } from './shared/shared.module';
+import { HomeModule } from './pages/home/home.module';
+import { ProductModule } from './pages/product/products.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { HomeModule } from './Home/home.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    ProductModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

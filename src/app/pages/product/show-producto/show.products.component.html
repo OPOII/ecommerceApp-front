@@ -1,0 +1,33 @@
+<div>
+  <div class="container">
+   <app-barrita tipo="Ver productos"></app-barrita>
+    <button class="crear" (click)="crearProducto()">Crear Producto</button>
+    <h2>Productos</h2>
+    <table class="table">
+      <thead class="head">
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Inventario</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Acción</th>
+          <th scope="col">Acción</th>
+        </tr>
+      </thead>
+      <tbody class="body">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <button class="editar" (click)="editarProducto()">Editar</button>
+          </td>
+          <td>
+            <button class="eliminar" (click)="eliminarProducto()">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

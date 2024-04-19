@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './Home/Pages/home-page/home.component';
+import { HomeComponent } from './pages/home/pages/home-page/home.component';
+import { ShowProductsComponent } from './pages/product/show-producto/show.products.component';
 
 const routes: Routes = [
   {
@@ -11,13 +12,17 @@ const routes: Routes = [
     path:'home',
     component: HomeComponent
   },
+  {
+    path:'products',
+    loadChildren:()=>import('./pages/product/products.module').then(m=>m.ProductModule)
+  },
   // {
   //   path:'auth',
   //   loadChildren:()=>import('./auth/auth.module').then(m=>m.AuthModule),
   // },
   {
     path:'**',
-    redirectTo: 'home'
+    redirectTo: '/home'
   },
 ];
 

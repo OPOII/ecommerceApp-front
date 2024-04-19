@@ -1,0 +1,69 @@
+.container{
+  width: 100%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.crear{
+  background-color: #007bff;
+  border-color: 007bff;
+  color: white;
+  border: 1px none transparent;
+  border-radius: .25px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline-block;
+  padding: .375rem .75rem;;
+  border-radius: 5px;
+}
+
+.table{
+
+  border-collapse: collapse;   /* Expande el table al 100 de forma horizontal */
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+.head {
+  display: table-header-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+  border-style: nonde;
+}
+
+.body{
+  display: table-row-group;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+  border-style: none;
+}
+
+.table button{
+  padding: .375rem .75rem;
+}
+
+.editar{
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+
+}
+.eliminar{
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+}
+
+
+
+
+
+
+
