@@ -1,0 +1,12 @@
+.subir-archivo{
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+}
