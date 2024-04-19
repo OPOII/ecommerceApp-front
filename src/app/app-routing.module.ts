@@ -14,16 +14,16 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: '404',
-    component:Error404PageComponent,
-  },
-  {
     path:'products',
     loadChildren:()=>import('./pages/product/products.module').then(m=>m.ProductModule)
   },
   {
+    path: '404',
+    component:Error404PageComponent,
+  },
+  {
     path:'**',
-    redirectTo: '404'
+    redirectTo: 'home'
   },
 ];
 

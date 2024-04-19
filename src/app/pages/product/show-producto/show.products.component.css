@@ -1,10 +1,11 @@
-.container{
+.container {
   width: 100%;
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-.crear{
+
+.crear {
   background-color: #007bff;
   border-color: 007bff;
   color: white;
@@ -14,13 +15,15 @@
   font-size: 1rem;
   line-height: 1.5;
   display: inline-block;
-  padding: .375rem .75rem;;
+  padding: .375rem .75rem;
+  ;
   border-radius: 5px;
 }
 
-.table{
+.table {
 
-  border-collapse: collapse;   /* Expande el table al 100 de forma horizontal */
+  border-collapse: collapse;
+  /* Expande el table al 100 de forma horizontal */
   text-indent: initial;
   border-spacing: 2px;
 }
@@ -33,7 +36,7 @@
   border-style: nonde;
 }
 
-.body{
+.body {
   display: table-row-group;
   vertical-align: inherit;
   unicode-bidi: isolate;
@@ -41,11 +44,11 @@
   border-style: none;
 }
 
-.table button{
+.table button {
   padding: .375rem .75rem;
 }
 
-.editar{
+.editar {
   background-color: orange;
   color: black;
   border-radius: 5px;
@@ -53,17 +56,11 @@
   text-align: center;
 
 }
-.eliminar{
+
+.eliminar {
   color: white;
   background-color: red;
   border-radius: 5px;
   border-color: transparent;
   text-align: center;
 }
-
-
-
-
-
-
-
