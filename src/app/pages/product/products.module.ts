@@ -4,7 +4,7 @@ import { EditarProductoComponent } from './editar-producto/editar-producto.compo
 import { ShowProductsComponent } from './show-producto/show.products.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AddProductComponent } from './add-product/add-product.component';
-import { BarritaComponent } from './components/barrita.component';
+import { BarritaComponent } from './components/barrita/barrita.component';
 import { ProductRoutingModule } from './product-routing.module';
 
 

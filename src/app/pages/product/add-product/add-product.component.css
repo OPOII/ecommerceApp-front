@@ -28,23 +28,30 @@
   width: 20%;
 }
 
-.form-container input {
+input {
   padding: .375rem .75rem;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+  /* outline: none;  hacer algo con esto*/
 }
 
 .guardar {
   border-radius: 5px;
   color: white;
   background-color: #28a745;
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 1rem;
   border: 1px solid transparent;
   font-weight: 400;
   /* Padding de esta forma sirve para agrandar el boton */
   padding: .375rem .75rem;
 
+}
+.form-container textarea{
+  height: auto;
+  padding: .375rem .75rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
 }
 
 .buton-container {
