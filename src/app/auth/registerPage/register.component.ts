@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { AuthService } from '../services/auth-service.service';
+import { RegisterUser } from '../interfaces/register.interface';
 
 @Component({
     selector: 'app-register',
@@ -7,7 +9,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
     styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
-
+  private authService=inject(AuthService);
+  private fb=inject(FormBuilder);
   public myForm:FormGroup=this.fb.group({
     firstName:[],
     secondName:[],
@@ -15,15 +18,15 @@ export class RegisterComponent {
     phone:[],
     email:[],
     password:[],
-    secondPassword:[]
+    password2:[]
   })
 
-  constructor(private fb:FormBuilder){
-
-  }
 
   onSumbit(){
-
+    console.log("Prueba hola")
+    const registerUser:RegisterUser=this.myForm.value as RegisterUser;
+    registerUser.username=registerUser.firstName+registerUser.lastName;
+    this.authService.register(registerUser)
   }
 
 }

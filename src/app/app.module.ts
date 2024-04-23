@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './pages/home/home.module';
 import { ProductModule } from './pages/product/products.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +15,8 @@ import { ProductModule } from './pages/product/products.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    ProductModule,
     SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
