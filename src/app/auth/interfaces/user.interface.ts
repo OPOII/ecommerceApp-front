@@ -14,8 +14,8 @@ export interface User{
   direction:             string;
   phone:                 string;
   role:                  string;
-  products:              Product[];
-  orders:                Order[];
+  products:              Array<Product>;
+  orders:                Array<Order>;
   active:                boolean;
   enabled:               boolean;
   accountNonLocked:      boolean;

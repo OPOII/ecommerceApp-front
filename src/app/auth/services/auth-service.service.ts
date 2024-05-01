@@ -25,7 +25,6 @@ export class AuthService {
 
 
   register(user:RegisterUser){
-    console.log(user);
     const url=`${this.baseUrl}/auth/register`;
     const body=user;
     let response=this.http.post(url,body).subscribe();

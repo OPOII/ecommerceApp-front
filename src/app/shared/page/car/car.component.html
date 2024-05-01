@@ -1,4 +1,18 @@
-<div class="content">
+<div class="content" *ngIf="!isUserLoggin()">
   <button class="car">Car</button>
   <button class="car" (click)="goToLogin()">Login </button>
 </div>
+
+<div class="content" *ngIf="isUserLoggin()">
+  <button class="car">Car</button>
+  <div class="dropdown">
+    <button>Menu</button>
+    <div class="dropdown-content">
+      <div *ngFor="let item of items">
+        <button (click)="goTo(item.url)">{{item.text}}</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
