@@ -23,7 +23,6 @@ export class RegisterComponent {
 
 
   onSumbit(){
-    console.log("Prueba hola")
     const registerUser:RegisterUser=this.myForm.value as RegisterUser;
     registerUser.username=registerUser.firstName+registerUser.lastName;
     this.authService.register(registerUser)

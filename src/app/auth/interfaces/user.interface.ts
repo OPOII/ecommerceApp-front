@@ -1,17 +1,24 @@
-import { identificationType } from "./identificationType.enum";
+import { Product } from "src/app/pages/home/interfaces/products.interface";
+import { Order } from "src/app/pages/home/interfaces/order.interface";
 
 export interface User{
-  _id:      string;
-  firstName:     string;
-  middleName:     string;
-  secondName:     string;
-  lasName:     string;
-  identification:     identificationType;
-  identificationNumber:     string;
-  email:     string;
-  direction:     string;
-  phone:    string;
-  password:    string;
-  isActive: boolean;
-  roles:    string[];
+  id:                    number;
+  firstName:             string;
+  middleName:            string;
+  secondName:            string;
+  lastName:              string;
+  username:              string;
+  identification:        string;
+  identificationNumber:  string;
+  email:                 string;
+  direction:             string;
+  phone:                 string;
+  role:                  string;
+  products:              Product[];
+  orders:                Order[];
+  active:                boolean;
+  enabled:               boolean;
+  accountNonLocked:      boolean;
+  credentialsNonExpired: boolean;
+  accountNonExpired:     boolean;
 }

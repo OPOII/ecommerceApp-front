@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
-import { HomeModule } from './pages/home/home.module';
-import { ProductModule } from './pages/product/products.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
