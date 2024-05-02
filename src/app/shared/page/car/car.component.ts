@@ -30,11 +30,9 @@ export class CarComponent implements OnInit{
   ]
   constructor(){}
   ngOnInit(): void {
-   if(this.user===null){
-    this.isUserLoggin.set(false);
-   }else{
-     this.isUserLoggin.set(true);
-   }
+    if(this.user()!==null){
+      this.isUserLoggin.set(true);
+    }
   }
 
   goToLogin(){
@@ -49,7 +47,5 @@ export class CarComponent implements OnInit{
       this.router.navigate([url]);
     }
   }
-  reloadPage(){
-    window.location.reload();
-  }
+
 }
